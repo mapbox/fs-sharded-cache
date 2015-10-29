@@ -1,0 +1,22 @@
+{
+  "name": "fs-sharded-cache",
+  "version": "0.0.0",
+  "description": "Sharded filesystem cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.test.js",
+    "docs": "documentation -f md > api.md"
+  },
+  "author": "Mapbox",
+  "license": "ISC",
+  "repository": "mapbox/fs-sharded-cache",
+  "bugs": "https://github.com/mapbox/fs-sharded-cache/issues",
+  "dependencies": {
+    "mkdirp": "~0.5.1",
+    "murmur": "0.0.2"
+  },
+  "devDependencies": {
+    "documentation": "^2.0.1",
+    "tape": "^4.0.1"
+  }
+}
