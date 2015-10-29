@@ -3,7 +3,7 @@ var fs = require('fs');
 var FSC = require('../index.js');
 
 tape('toKey', function(assert) {
-    assert.equal(FSC.toKey('/tmp/test-fsc', 'http://www.example.com/foobar'), '/tmp/test-fsc/7e/34/db8e', 'generates key for id');
+    assert.equal(FSC.toKey('/tmp/test-fsc', 'http://www.example.com/foobar'), '/tmp/test-fsc/b8/f7/1f80', 'generates key for id');
     for (var i = 0; i < 100; i++) {
         var key = FSC.toKey('/tmp/test-fsc', Math.random().toString());
         if (!(/^\/tmp\/test-fsc\/[0-f]{2}\/[0-f]{2}\/[0-f]{4}$/).test(key)) {

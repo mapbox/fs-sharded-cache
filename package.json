@@ -12,8 +12,7 @@
   "repository": "mapbox/fs-sharded-cache",
   "bugs": "https://github.com/mapbox/fs-sharded-cache/issues",
   "dependencies": {
-    "mkdirp": "~0.5.1",
-    "murmur": "0.0.2"
+    "mkdirp": "~0.5.1"
   },
   "devDependencies": {
     "documentation": "^2.0.1",

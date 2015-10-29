@@ -1,4 +1,4 @@
-var murmur = require('murmur');
+var crypto = require('crypto');
 var mkdirp = require('mkdirp');
 var fs = require('fs');
 var path = require('path');
@@ -53,7 +53,7 @@ function FSC(options) {
 }
 
 function toKey(cachePath, id) {
-    var hash = murmur.hash128(id, 0xFFFFFFFF).hex();
+    var hash = crypto.createHash('md5').update(id).digest('hex');
     return path.join(cachePath, hash.substr(0,2), hash.substr(2,2), hash.substr(4,4));
 }
 
